@@ -536,15 +536,15 @@ function hmrAcceptRun(bundle, id) {
 // A ALGUNA DEPENDENCIA
 var _router = require("./router");
 // COMPONENTS
-var _index = require("./components/header/index");
-var _index1 = require("./components/title/index");
-var _index2 = require("./components/text-lorem/index");
-var _index3 = require("./components/subtitle/index");
-var _index4 = require("./components/label-input/index");
-var _index5 = require("./components/button/index");
-var _index6 = require("./components/footer/index");
-var _index7 = require("./components/button-step/index");
-var _index8 = require("./components/button-back/index");
+var _index = require("../components/header/index");
+var _index1 = require("../components/title/index");
+var _index2 = require("../components/text-lorem/index");
+var _index3 = require("../components/subtitle/index");
+var _index4 = require("../components/label-input/index");
+var _index5 = require("../components/button/index");
+var _index6 = require("../components/footer/index");
+var _index7 = require("../components/button-step/index");
+var _index8 = require("../components/button-back/index");
 (function() {
     (0, _index.header)();
     (0, _index1.title)();
@@ -559,13 +559,13 @@ var _index8 = require("./components/button-back/index");
     (0, _router.initRouter)(rootEl);
 })();
 
-},{"./router":"4QFWt","./components/header/index":"6hCU4","./components/title/index":"iClsj","./components/text-lorem/index":"gQ3cG","./components/subtitle/index":"2LuaI","./components/label-input/index":"5NONQ","./components/button/index":"dZaQH","./components/footer/index":"aoxsu","./components/button-step/index":"3oLG7","./components/button-back/index":"6GwsO"}],"4QFWt":[function(require,module,exports) {
+},{"./router":"4QFWt","../components/header/index":"bM2g5","../components/title/index":"3pUEU","../components/text-lorem/index":"6WZS1","../components/subtitle/index":"cRgpS","../components/label-input/index":"ahywp","../components/button/index":"4iqCu","../components/footer/index":"aKPlg","../components/button-step/index":"i9yUT","../components/button-back/index":"dAdto"}],"4QFWt":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "initRouter", ()=>initRouter);
-var _welcome = require("./pages/welcome");
-var _step1 = require("./pages/step-1");
-var _thankyou = require("./pages/thankyou");
+var _welcome = require("../pages/welcome");
+var _step1 = require("../pages/step-1");
+var _thankyou = require("../pages/thankyou");
 // EN EL ELEMENTO CONTAINER SE MONTAN LAS RUTAS
 const routes = [
     {
@@ -607,7 +607,7 @@ function initRouter(container) {
     else handleRoute(location.pathname);
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./pages/welcome":"fNSF3","./pages/step-1":"fHRFq","./pages/thankyou":"ay1CF"}],"gkKU3":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../pages/welcome":"9DGFD","../pages/step-1":"lrFzQ","../pages/thankyou":"acJzN"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -637,7 +637,7 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"fNSF3":[function(require,module,exports) {
+},{}],"9DGFD":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "initPageA", ()=>initPageA);
@@ -665,7 +665,7 @@ function initPageA(params) {
     return div;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fHRFq":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lrFzQ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "initPageB", ()=>initPageB);
@@ -698,7 +698,7 @@ function initPageB(params) {
     return div;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ay1CF":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"acJzN":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "initPageThankyou", ()=>initPageThankyou);
@@ -723,7 +723,7 @@ function initPageThankyou(params) {
     return div;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6hCU4":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bM2g5":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "header", ()=>header);
@@ -758,7 +758,7 @@ function header() {
     customElements.define("header-el", Header);
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iClsj":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3pUEU":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "title", ()=>title);
@@ -807,7 +807,7 @@ function title() {
     customElements.define("title-and-p-el", TitleAndP);
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gQ3cG":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6WZS1":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "textLorem", ()=>textLorem);
@@ -841,7 +841,7 @@ function textLorem() {
     customElements.define("text-lorem", LoremText);
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2LuaI":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cRgpS":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "subtitle", ()=>subtitle);
@@ -885,7 +885,7 @@ function subtitle() {
     customElements.define("subtitle-el", Subtitle);
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5NONQ":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ahywp":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "labelAndInput", ()=>labelAndInput);
@@ -968,7 +968,7 @@ function labelAndInput() {
     customElements.define("label-input", LabelInput);
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dZaQH":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4iqCu":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "button", ()=>button);
@@ -1052,7 +1052,7 @@ function button() {
     customElements.define("button-el", Button);
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aoxsu":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aKPlg":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "footer", ()=>footer);
@@ -1088,7 +1088,7 @@ function footer() {
     customElements.define("footer-el", Footer);
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3oLG7":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"i9yUT":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "butonStepOne", ()=>butonStepOne);
@@ -1133,7 +1133,7 @@ function butonStepOne() {
     customElements.define("button-step-one", ButtonStep);
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6GwsO":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dAdto":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "buttonVolver", ()=>buttonVolver);

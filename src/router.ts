@@ -1,6 +1,6 @@
-import {initPageA} from "./pages/welcome"
-import {initPageB} from "./pages/step-1"
-import {initPageThankyou} from "./pages/thankyou"   
+import {initPageA} from "../pages/welcome"
+import {initPageB} from "../pages/step-1"
+import {initPageThankyou} from "../pages/thankyou"   
    
    // EN EL ELEMENTO CONTAINER SE MONTAN LAS RUTAS
    const routes = [
