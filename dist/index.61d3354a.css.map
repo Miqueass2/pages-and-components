@@ -1,0 +1,1 @@
+{"mappings":"AAAA;;;;AAIA","sources":["src/index.css"],"sourcesContent":["*{\n   box-sizing: border-box;\n}\n\nbody{\n   margin: 0;\n   padding: 0;\n   font-family: 'Poppins', sans-serif;\n}"],"names":[],"version":3,"file":"index.61d3354a.css.map","sourceRoot":"/__parcel_source_root/"}
