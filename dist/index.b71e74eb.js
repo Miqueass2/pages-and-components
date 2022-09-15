@@ -607,7 +607,35 @@ function initRouter(container) {
     else handleRoute(location.pathname);
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../pages/welcome":"9DGFD","../pages/step-1":"lrFzQ","../pages/thankyou":"acJzN"}],"gkKU3":[function(require,module,exports) {
+},{"../pages/welcome":"9DGFD","../pages/step-1":"lrFzQ","../pages/thankyou":"acJzN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9DGFD":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "initPageA", ()=>initPageA);
+function initPageA(params) {
+    const div = document.createElement("div");
+    div.innerHTML = `
+   <header-el></header-el>
+   
+   <title-and-p-el></title-and-p-el>
+
+   <text-lorem></text-lorem>
+
+   <subtitle-el></subtitle-el>
+
+   <label-input></label-input>
+
+      <button-el class="boton"></button-el>
+
+   <footer-el></footer-el>
+   `;
+    const buttonDiv = div.querySelector(".boton");
+    buttonDiv.addEventListener("click", ()=>{
+        params.goTo("/step-1");
+    });
+    return div;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -637,35 +665,7 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"9DGFD":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "initPageA", ()=>initPageA);
-function initPageA(params) {
-    const div = document.createElement("div");
-    div.innerHTML = `
-   <header-el></header-el>
-   
-   <title-and-p-el></title-and-p-el>
-
-   <text-lorem></text-lorem>
-
-   <subtitle-el></subtitle-el>
-
-   <label-input></label-input>
-
-      <button-el class="boton"></button-el>
-
-   <footer-el></footer-el>
-   `;
-    const buttonDiv = div.querySelector(".boton");
-    buttonDiv.addEventListener("click", ()=>{
-        params.goTo("/step-1");
-    });
-    return div;
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lrFzQ":[function(require,module,exports) {
+},{}],"lrFzQ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "initPageB", ()=>initPageB);
