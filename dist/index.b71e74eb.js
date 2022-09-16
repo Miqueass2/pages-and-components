@@ -603,8 +603,12 @@ function initRouter(container) {
             container?.appendChild(el);
         }
     }
-    if (location.pathname === "/") goTo("/welcome");
+    if (location.pathname == "/") goTo("/welcome");
     else handleRoute(location.pathname);
+    window.onpopstate = function() {
+        handleRoute(location.pathname);
+        console.log("soy onpopstate");
+    };
 }
 
 },{"../pages/welcome":"9DGFD","../pages/step-1":"lrFzQ","../pages/thankyou":"acJzN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9DGFD":[function(require,module,exports) {

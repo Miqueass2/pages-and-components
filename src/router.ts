@@ -43,10 +43,13 @@ import {initPageThankyou} from "../pages/thankyou"
          }
       }
    }
-      if (location.pathname === '/') {
+      if (location.pathname == '/') {
       goTo("/welcome")
       } else {
          handleRoute(location.pathname);
       }
-
+      window.onpopstate = function () {
+         handleRoute(location.pathname);
+         console.log("soy onpopstate");
+      }
 }
